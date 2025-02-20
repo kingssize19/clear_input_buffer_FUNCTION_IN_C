@@ -53,11 +53,11 @@ Bu fonksiyon özellikle şu durumlarda kullanılır.
 
 ### Örnek Senaryo :
 
-**1. ** Kullanıcı 123 girer ve Enter tuşuna basar.
-**2. ** scanf("%d", &x); ile bu 123 sayısı alınır, ancak \n karakteri hala giriş tamponunda kalır.
-**3. ** clear_input_buffer(); çalıştırılır ve giriş tamponundaki \n temizlenir.
-**4. ** (void)getchar(); çağrısı, \n karakterini okuyarak işlemi tamamlar ve kullanıcıyı tekrar bir tuşa basmaya zorlar.
-**5. ** printf("x : %d\n", x); ile x ekrana yazdırılır.
+1. Kullanıcı 123 girer ve Enter tuşuna basar.
+2. scanf("%d", &x); ile bu 123 sayısı alınır, ancak \n karakteri hala giriş tamponunda kalır.
+3. clear_input_buffer(); çalıştırılır ve giriş tamponundaki \n temizlenir.
+4. (void)getchar(); çağrısı, \n karakterini okuyarak işlemi tamamlar ve kullanıcıyı tekrar bir tuşa basmaya zorlar.
+5. printf("x : %d\n", x); ile x ekrana yazdırılır.
 
 * Eğer clear_input_buffer kullanılmazsa, son getchar() hemen bir \n karakterini okuyarak hiçbir şey yapmadan devam eder, ve program doğrudan printf kısmına geçer.
 
